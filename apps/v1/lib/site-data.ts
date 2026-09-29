@@ -36,8 +36,18 @@ export const ecosystemData = {
         },
         {
             name: 'Job',
-            slug: '@phestus/jon-module',
+            slug: '@phestus/job-module',
             description: 'Provides a foundation for defining and executing background jobs.',
+        },
+        {
+            name: 'Cron',
+            slug: '@phestus/cron-module',
+            description: 'Provides a foundation for defining and executing background jobs.',
+        },
+        {
+            name: 'Cache',
+            slug: '@phestus/cache-module',
+            description: 'Allows developers to implement caching natively.'
         },
         {
             name: 'Workflow',
@@ -177,6 +187,10 @@ export const featuresData = {
             description: 'Move asynchronous work out of your request path with queues and jobs.',
         },
         {
+            title: 'Cron Jobs/Tasks',
+            description: 'Implement and handle scheudling for complex, long running tasks out of the box.',
+        },
+        {
             title: 'Workflows',
             description: 'Compose events, jobs, and other capabilities into reusable application workflows.',
         },
@@ -187,6 +201,10 @@ export const featuresData = {
         {
             title: 'Developer First',
             description: 'Keep the core runtime small and give developers control over the technologies behind it.',
+        },
+        {
+            title: 'Endless Scalability',
+            description: 'Phestus helps you scale when you want, and how you want. We support everything from a monolithic design to a microservice design.',
         },
     ],
 }

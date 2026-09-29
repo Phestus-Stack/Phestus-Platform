@@ -1,6 +1,6 @@
 const stats = [
     {
-        value: '10',
+        value: '11',
         label: 'Core modules',
     },
     {

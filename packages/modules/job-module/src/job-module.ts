@@ -27,11 +27,9 @@ export class JobModule implements PhestusModule {
         ],
     };
 
-    private readonly jobs =
-        new Map<string, RegisteredJob>();
+    private readonly jobs = new Map<string, RegisteredJob>();
 
-    private readonly consumers =
-        new Map<string, () => Promise<void>>();
+    private readonly consumers = new Map<string, () => Promise<void>>();
 
     private context?: PhestusContext;
     private initialized = false;

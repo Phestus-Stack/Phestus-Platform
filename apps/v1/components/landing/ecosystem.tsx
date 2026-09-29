@@ -3,7 +3,7 @@ const ecosystem = [
         number: '01',
         title: 'Modules',
         description: 'Define capabilities that Phestus applications can use.',
-        example: 'Events, queues, jobs, workflows, api, middleware, auth, workers, and more',
+        example: 'Events, queues, jobs, workflows, and so much more',
     },
     {
         number: '02',

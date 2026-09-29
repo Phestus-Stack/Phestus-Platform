@@ -22,19 +22,54 @@ const sections = [
         href: '/docs/plugins/introduction',
     },
     {
+        title: 'Services',
+        description: 'Explore how Phestus lets you build off of exisiting frameworks and services such as other CMSs, ORMs, and more.',
+        href: '/',
+    },
+    {
         title: 'API',
         description: 'Understand how to build, manage, and protect API routes using Phestus.',
         href: '/docs/api/introduction',
     },
     {
-        title: 'Workflows',
+        title: 'Middleware',
+        description: 'Explore how Phestus enables you to protect and extend logic ontop of your API endpoints.',
+        href: '/docs/middleware/introduction',
+    },
+    {
+        title: 'Auth',
+        description: 'learn how Phestus helps you defend your services through custom implementation and security methods.',
+        href: '/docs/auth/introduction',
+    },
+    {
+        title: 'Workflows & Jobs',
         description: 'Figure out how to build custom workflows for your project fit with jobs, steps, and event triggers.',
         href: '/docs/workflows-jobs/introduction',
+    },
+    {
+        title: 'Cron',
+        description: 'Learn how to schedule tasks, manage long running workflows, and more through the native Cron Module.',
+        href: '/docs/cron/introduction',
     },
     {
         title: 'Workers',
         description: 'Explore how Phestus handles scaling through our powerful and dynamic worker architecture.',
         href: '/docs/workers/introduction',
+    },
+    {
+        title: 'Cache',
+        description: 'Learn how to use the built in caching module, and extend it to suit your needs',
+        href: '/docs/cache/introduction',
+    },
+    {
+        title: 'Concepts',
+        description: 'Explore core Phestus concepts.',
+        href: '/docs/concepts/internal-communication',
+    },
+    {
+        title: 'Guides',
+        description: 'Learn by following along with custom built guides.',
+        href: '/docs/guides/making-service-adapter',
     },
 ]
 
