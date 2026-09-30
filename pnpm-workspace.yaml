@@ -5,3 +5,4 @@ packages:
   - "packages/plugins/*"
   - "apps/*"
   - "apps/phestus/*"
+  - "examples/*"

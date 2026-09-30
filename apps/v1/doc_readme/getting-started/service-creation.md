@@ -29,9 +29,7 @@ A service contains two primary areas:
 A basic service can be created by implementing the `PhestusService` interface.
 
 ```ts
-import type {
-    PhestusService,
-} from '@phestus/sdk'
+import { PhestusService } from '@phestus/sdk'
 
 export const service: PhestusService = {
     schema: {
@@ -68,16 +66,23 @@ export const service: PhestusService = {
             return 0
         },
 
-        async create(collection, data) {
-            return data
+        async create<T = unknown>(collection: string, data: unknown): Promise<T> {
+            return data as T
         },
 
-        async update(collection, id, data) {
-            return data
+        async update<T = unknown>(
+            collection: string,
+            id: string,
+            data: unknown
+        ): Promise<T> {
+            return data as T
         },
 
-        async delete(collection, id) {
-            return null
+        async delete<T = unknown>(
+            collection: string,
+            id: string
+        ): Promise<T> {
+            return null as T
         },
     },
 }
