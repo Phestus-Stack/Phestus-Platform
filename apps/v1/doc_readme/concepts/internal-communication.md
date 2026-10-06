@@ -49,7 +49,7 @@ The event can then be emitted through the Event module:
 
 ```ts
 const phestus = getPhestus()
-const event = phestus.getModule('event')
+const event = phestus.getModule<EventModule>('event')
 
 await event.emit(paymentEvent)
 ```
@@ -91,7 +91,7 @@ For example:
 
 ```ts
 const phestus = getPhestus()
-const event = phestus.getModule('event')
+const event = phestus.getModule<EventModule>('event')
 
 await event.emit(paymentEvent)
 ```
@@ -102,7 +102,7 @@ For example, a workflow module may directly interact with the Job module when it
 
 ```ts
 const phestus = getPhestus()
-const job = phestus.getModule('job')
+const job = phestus.getModule<JobModule>('job')
 
 await job.create({
     type: 'send-email',
@@ -148,7 +148,7 @@ The payment module does not need to know whether that event is eventually used f
 On the other hand, if a module needs to directly create a job, it can use the Job module itself:
 
 ```ts
-const job = phestus.getModule('job')
+const job = phestus.getModule<JobModule>('job')
 
 await job.create({
     type: 'send-email',

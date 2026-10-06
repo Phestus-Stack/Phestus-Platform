@@ -182,7 +182,7 @@ After registration, the plugin and its components are available through the runt
 
 ```ts
 phestus.getPlugin("my-plugin");
-phestus.getModule("my-module");
+phestus.getModule<MyModule>("my-module");
 phestus.getProvider("my-provider");
 ```
 

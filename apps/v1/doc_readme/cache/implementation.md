@@ -259,7 +259,7 @@ const phestus = new PhestusHost({
 Once the host has been initialized, the module can be retrieved through the Phestus module registry.
 
 ```ts
-const cache = phestus.getModule("cache");
+const cache = phestus.getModule<CacheModule>("cache");
 ```
 
 The application can then use the cache without knowing which provider is being used.
@@ -319,7 +319,7 @@ new CacheModule(
 Application code can continue using:
 
 ```ts
-const cache = phestus.getModule("cache");
+const cache = phestus.getModule<CacheModule>("cache");
 
 await cache.set("user:123", user);
 const value = await cache.get("user:123");

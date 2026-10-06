@@ -315,7 +315,7 @@ for (const module of config.modules ?? []) {
 Once registered, the Auth Module becomes part of the Phestus runtime and can be retrieved by its manifest slug.
 
 ```ts
-const auth = phestus.getModule("auth");
+const auth = phestus.getModule<AuthModule>("auth");
 ```
 
 The module slug comes from its manifest:
@@ -335,7 +335,7 @@ This means the application does not need to maintain a separate reference to the
 After retrieving the Auth Module from Phestus, its authentication capabilities can be used normally:
 
 ```ts
-const auth = phestus.getModule("auth");
+const auth = phestus.getModule<AuthModule>("auth");
 
 const actor = await auth.authenticate({
     request,
@@ -407,7 +407,7 @@ for (const module of plugin.modules ?? []) {
 From the application's perspective, the module can still be retrieved in the same way:
 
 ```ts
-const auth = phestus.getModule("auth");
+const auth = phestus.getModule<AuthModule>("auth");
 ```
 
 This allows modules to be distributed and composed through plugins without changing how the application accesses them.
@@ -480,7 +480,7 @@ const phestus = new Phestus({
 Phestus registers it and makes it available through its module registry:
 
 ```ts
-const auth = phestus.getModule("auth");
+const auth = phestus.getModule<AuthModule>("auth");
 ```
 
 The registered module can then be consumed by the application or by other modules that require its capabilities.

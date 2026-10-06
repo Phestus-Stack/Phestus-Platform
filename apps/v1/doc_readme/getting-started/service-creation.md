@@ -129,6 +129,16 @@ const result = await context.service.data.find(
 
 The module only knows that it is using the `PhestusService` interface. The actual implementation could be backed by Payload, PostgreSQL, Redis, an ORM, or another system.
 
+
+## Use outside of Modules
+`PhestusService` can also be used outside of modules and plugins allowing you to interact with your data and schema layer directly.
+
+Accessing the service layer can be done through the phestus config:
+
+```ts
+const service = phestus.getService()
+```
+
 ## Next Steps
 
 The service system provides much more functionality than this basic implementation. The Services section covers:

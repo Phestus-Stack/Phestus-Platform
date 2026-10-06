@@ -1,0 +1,1 @@
+export { inMemoryService } from './service'

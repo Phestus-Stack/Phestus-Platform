@@ -1,0 +1,32 @@
+{
+  "name": "@phestus/express-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@phestus/api-module": "workspace:*",
+    "@phestus/middleware-module": "workspace:*",
+    "@phestus/core": "workspace:*",
+    "@phestus/sdk": "workspace:*",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^26.4.1",
+    "tslib": "^2.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -16,12 +16,18 @@ export interface MiddlewareResponse {
 
 export type MiddlewareNext = () => Promise<MiddlewareResponse>;
 
+export interface MiddlewareOptions {
+    name: string;
+    options?: Record<string, unknown>;
+}
+
 export interface Middleware {
     name: string;
 
     handle(
         request: MiddlewareRequest,
         next: MiddlewareNext,
+        options?: Record<string, unknown>,
     ): Promise<MiddlewareResponse>;
 }
 
@@ -31,6 +37,6 @@ export interface MiddlewareRegistry {
     execute(
         request: MiddlewareRequest,
         handler: MiddlewareNext,
-        middleware?: string[],
+        middleware?: MiddlewareOptions[],
     ): Promise<MiddlewareResponse>;
 }

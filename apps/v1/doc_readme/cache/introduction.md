@@ -31,7 +31,7 @@ The Cache Module exposes five basic operations:
 A simple example looks like this:
 
 ```ts
-const cache = phestus.getModule("cache");
+const cache = <CacheModule>("cache");
 
 await cache.set("user:123", {
     id: "123",

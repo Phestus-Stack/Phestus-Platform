@@ -17,8 +17,10 @@
     "@phestus/queue-module": "workspace:*",
     "@phestus/workflow-module": "workspace:*",
     "@phestus/api-module": "workspace:*",
+    "@phestus/express-api": "workspace:*",
     "@phestus/auth-module": "workspace:*",
-    "@phestus/middleware-module": "workspace:*"
+    "@phestus/middleware-module": "workspace:*",
+    "@phestus/in-memory": "workspace:*"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

@@ -87,12 +87,18 @@ export const ecosystemData = {
             module: 'Queue',
             description: 'A BullMQ-backed implementation of the Phestus Queue module.',
         },
+        {
+            name: 'ExpressJS API',
+            slug: '@phestus/express-api',
+            module: 'API',
+            description: 'A ExpressJS api provider that interprets the Phestus API Module for easy deloyment within ExpressJS.',
+        },
     ],
     serviceAdapters: [
         {
-            name: 'Payload CMS',
-            slug: 'payload',
-            description: 'Use Payload CMS as the application service layer for Phestus.',
+            name: 'In Memory',
+            slug: 'in-memory',
+            description: 'A service adapter that is built for in memory usage which allows for convenient testing and fast implementation',
         },
         {
             name: 'Custom Service',

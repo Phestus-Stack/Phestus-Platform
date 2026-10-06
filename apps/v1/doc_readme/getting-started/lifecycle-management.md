@@ -46,8 +46,8 @@ Modules and providers can use their `initialize()` lifecycle methods to establis
 After initialization, the Phestus instance can be used to access registered modules, providers, and plugins.
 
 ```ts
-const queue = phestus.getModule('queue')
-const event = phestus.getModule('event')
+const queue = phestus.getModule<QueueModule>('queue')
+const event = phestus.getModule<EventModule>('event')
 ```
 
 You can also check the current runtime state:

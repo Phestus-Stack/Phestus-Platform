@@ -6,6 +6,7 @@ import type {
     Api,
     ApiEndpoint,
     ApiMethod,
+    ApiProvider,
 } from "./types";
 
 export class ApiModule implements PhestusModule, Api {
@@ -29,9 +30,22 @@ export class ApiModule implements PhestusModule, Api {
         ],
     };
 
-    private endpoints = new Map<string, ApiEndpoint<any, any, any, any>>();
+    private endpoints = new Map<
+        string,
+        ApiEndpoint<any, any, any, any>
+    >();
+    private initialized = false;
 
-    registerEndpoint<
+    constructor(
+        private provider: ApiProvider,
+    ) { }
+
+    async initialize(): Promise<void> {
+        await this.provider.expose(this.getEndpoints());
+        this.initialized = true;
+    }
+
+    async registerEndpoint<
         TBody = unknown,
         TParams = Record<string, string>,
         TQuery = Record<string, string>,
@@ -43,7 +57,7 @@ export class ApiModule implements PhestusModule, Api {
             TQuery,
             TResponse
         >,
-    ): void {
+    ): Promise<void> {
         const key = `${endpoint.method}:${endpoint.path}`;
 
         if (this.endpoints.has(key)) {
@@ -51,13 +65,20 @@ export class ApiModule implements PhestusModule, Api {
         }
 
         this.endpoints.set(key, endpoint);
-    }
 
+        if (this.initialized) {
+            await this.provider.expose([endpoint]);
+        }
+    }
 
     getEndpoint(
         method: ApiMethod,
         path: string,
-    ): ApiEndpoint | undefined {
+    ): ApiEndpoint<any, any, any, any> | undefined {
         return this.endpoints.get(`${method}:${path}`);
+    }
+
+    getEndpoints(): ApiEndpoint<any, any, any, any>[] {
+        return Array.from(this.endpoints.values());
     }
 }

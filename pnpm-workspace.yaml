@@ -3,6 +3,7 @@ packages:
   - "packages/modules/*"
   - "packages/providers/*"
   - "packages/plugins/*"
+  - "packages/services/*"
   - "apps/*"
   - "apps/phestus/*"
   - "examples/*"

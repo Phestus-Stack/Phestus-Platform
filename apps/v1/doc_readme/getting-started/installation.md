@@ -84,6 +84,8 @@ export const phestusConfig: PhestusConfig = {
     // plugins
   ],
 }
+
+export const phestus = new Phestus(phestusConfig)
 ```
 
 The exact configuration depends on the providers and integrations used by your application.

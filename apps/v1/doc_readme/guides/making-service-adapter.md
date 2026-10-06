@@ -9,7 +9,7 @@ tags:
  - cms
  - architecture
  - guide
-order: 1
+order: 2
 ---
 
 This article is coming soon and is currently in the works

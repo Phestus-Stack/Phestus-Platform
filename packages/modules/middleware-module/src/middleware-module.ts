@@ -8,6 +8,7 @@ import type {
     MiddlewareNext,
     MiddlewareRequest,
     MiddlewareResponse,
+    MiddlewareOptions,
 } from "./types";
 
 export class MiddlewareModule implements PhestusModule, MiddlewareRegistry {
@@ -30,28 +31,40 @@ export class MiddlewareModule implements PhestusModule, MiddlewareRegistry {
     async execute(
         request: MiddlewareRequest,
         handler: MiddlewareNext,
-        middleware: string[] = [],
+        middleware?: MiddlewareOptions[],
     ): Promise<MiddlewareResponse> {
-        const selected = middleware.length
-            ? this.middleware.filter((item) =>
-                middleware.includes(item.name),
-            )
-            : this.middleware;
+        const middlewareList = middleware ?? [];
 
         let index = -1;
 
-        const next = async (): Promise<MiddlewareResponse> => {
-            index++;
+        const dispatch = async (position: number): Promise<MiddlewareResponse> => {
+            if (position <= index) {
+                throw new Error('Middleware called next() multiple times');
+            }
 
-            const current = selected[index];
+            index = position;
 
-            if (!current) {
+            const config = middlewareList[position];
+
+            if (!config) {
                 return handler();
             }
 
-            return current.handle(request, next);
+            const middleware = this.getMiddleware().find(
+                item => item.name === config.name,
+            );
+
+            if (!middleware) {
+                throw new Error(`Middleware '${config.name}' is not registered`);
+            }
+
+            return middleware.handle(
+                request,
+                () => dispatch(position + 1),
+                config.options,
+            );
         };
 
-        return next();
+        return dispatch(0);
     }
 }

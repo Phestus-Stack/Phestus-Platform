@@ -165,7 +165,7 @@ Once the middleware operation has been created, register it with the Middleware 
 // Custom method to return phestus object
 const phestus = getPhestus();
 
-const middleware = phestus.getModule("middleware");
+const middleware = phestus.getModule<MiddlewareModule>("middleware");
 
 middleware.use(loggingMiddleware);
 middleware.use(maintenanceMiddleware);
