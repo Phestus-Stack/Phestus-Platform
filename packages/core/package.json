@@ -2,6 +2,23 @@
   "name": "@phestus/core",
   "version": "0.1.0",
   "private": false,
+  "description": "The core runtime for Phestus, providing the main interfaces, configuration, and infrastructure for building modular applications.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Phestus-Stack/Phestus-Platform.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/Phestus-Stack/Phestus-Platform#readme",
+  "keywords": [
+    "phestus",
+    "core",
+    "backend",
+    "framework",
+    "modular",
+    "typescript",
+    "runtime"
+  ],
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,6 +31,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",

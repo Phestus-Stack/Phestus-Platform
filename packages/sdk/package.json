@@ -2,6 +2,21 @@
   "name": "@phestus/sdk",
   "version": "0.1.0",
   "private": false,
+  "description": "The core SDK for building modular web infrastructure with Phestus.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Phestus-Stack/Phestus-Platform.git",
+    "directory": "packages/sdk"
+  },
+  "homepage": "https://github.com/Phestus-Stack/Phestus-Platform#readme",
+  "keywords": [
+    "phestus",
+    "modular",
+    "backend",
+    "framework",
+    "typescript"
+  ],
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,6 +29,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
