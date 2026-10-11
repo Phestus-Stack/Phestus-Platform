@@ -1,6 +1,6 @@
 {
   "name": "@phestus/api-client-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The API client module for Phestus, providing client-side utilities for interacting with APIs exposed by Phestus applications.",
   "license": "MIT",
