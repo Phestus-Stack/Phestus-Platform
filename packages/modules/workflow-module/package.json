@@ -1,6 +1,6 @@
 {
   "name": "@phestus/workflow-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The workflow module for Phestus, providing event-driven workflow orchestration and coordination of asynchronous jobs.",
   "license": "MIT",

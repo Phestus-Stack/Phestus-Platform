@@ -1,6 +1,6 @@
 {
   "name": "@phestus/job-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The job module for Phestus, providing job registration and handler management for asynchronous task processing.",
   "license": "MIT",

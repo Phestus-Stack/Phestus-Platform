@@ -1,6 +1,6 @@
 {
   "name": "@phestus/queue-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The queue module for Phestus, providing queue management and task dispatch capabilities for modular applications.",
   "license": "MIT",

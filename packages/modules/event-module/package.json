@@ -1,6 +1,6 @@
 {
   "name": "@phestus/event-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The event module for Phestus, providing event publishing and subscription capabilities for modular applications.",
   "license": "MIT",
