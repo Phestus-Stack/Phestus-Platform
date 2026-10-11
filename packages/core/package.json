@@ -1,6 +1,6 @@
 {
   "name": "@phestus/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The core runtime for Phestus, providing the main interfaces, configuration, and infrastructure for building modular applications.",
   "license": "MIT",

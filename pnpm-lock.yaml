@@ -159,13 +159,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/api-module:
@@ -175,13 +175,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/auth-module:
@@ -191,13 +191,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/cache-module:
@@ -207,13 +207,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/cron-module:
@@ -226,13 +226,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/event-module:
@@ -245,13 +245,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/job-module:
@@ -264,13 +264,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/middleware-module:
@@ -280,13 +280,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/queue-module:
@@ -296,32 +296,29 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/worker-module:
     dependencies:
-      '@phestus/core':
-        specifier: workspace:*
-        version: link:../../core
       '@phestus/sdk':
         specifier: workspace:*
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/modules/workflow-module:
@@ -340,13 +337,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/plugins/queue-plugin:
@@ -362,13 +359,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/providers/bullmq:
@@ -387,13 +384,13 @@ importers:
         specifier: ^26.4.1
         version: 26.6.4
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/providers/express-api:
@@ -401,9 +398,6 @@ importers:
       '@phestus/api-module':
         specifier: workspace:*
         version: link:../../modules/api-module
-      '@phestus/core':
-        specifier: workspace:*
-        version: link:../../core
       '@phestus/middleware-module':
         specifier: workspace:*
         version: link:../../modules/middleware-module
@@ -421,13 +415,13 @@ importers:
         specifier: ^26.4.1
         version: 26.6.4
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
   packages/sdk:
@@ -452,13 +446,13 @@ importers:
         version: link:../../sdk
     devDependencies:
       tslib:
-        specifier: ^2.0.0
+        specifier: 2.8.1
         version: 2.8.1
       tsup:
-        specifier: ^8.5.0
+        specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.29)(tsx@4.23.15)(typescript@5.7.3)(yaml@2.9.1)
       typescript:
-        specifier: ^5.0.0
+        specifier: 5.7.3
         version: 5.7.3
 
 packages:
