@@ -1,6 +1,6 @@
 {
   "name": "@phestus/express-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The Express API provider for Phestus, integrating Express 5 with the Phestus API and middleware modules to handle HTTP requests and route registration.",
   "license": "MIT",
