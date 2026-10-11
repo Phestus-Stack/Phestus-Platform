@@ -1,6 +1,6 @@
 {
   "name": "@phestus/cron-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The cron module for Phestus, providing scheduled task execution and recurring job coordination for modular applications.",
   "license": "MIT",
