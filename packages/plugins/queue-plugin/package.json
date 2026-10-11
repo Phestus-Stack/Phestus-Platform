@@ -1,6 +1,6 @@
 {
   "name": "@phestus/queue-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The queue plugin for Phestus, integrating the queue module with the BullMQ provider for background job processing.",
   "license": "MIT",
