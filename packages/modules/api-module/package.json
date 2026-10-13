@@ -1,6 +1,6 @@
 {
   "name": "@phestus/api-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The API module for Phestus, providing API endpoint registration and request handling for modular applications.",
   "license": "MIT",
