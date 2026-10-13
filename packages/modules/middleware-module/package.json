@@ -1,6 +1,6 @@
 {
   "name": "@phestus/middleware-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The middleware module for Phestus, providing reusable request-processing middleware and an execution pipeline for modular applications.",
   "license": "MIT",

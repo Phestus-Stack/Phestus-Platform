@@ -1,6 +1,6 @@
 {
   "name": "@phestus/auth-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "The authentication and authorization module for Phestus, providing provider-driven identity verification and access control.",
   "license": "MIT",
