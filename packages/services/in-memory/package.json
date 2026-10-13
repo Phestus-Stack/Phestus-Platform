@@ -1,6 +1,6 @@
 {
   "name": "@phestus/in-memory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "An in-memory service adapter for Phestus, providing in-memory schema definition, data storage, and query management for development, testing, and lightweight applications.",
   "license": "MIT",
