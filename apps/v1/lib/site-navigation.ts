@@ -71,6 +71,12 @@ export const siteNavigation: SiteNavigation = {
                 order: 5,
             },
             {
+                label: 'Versions',
+                href: '/versions',
+                position: 'center',
+                order: 6,
+            },
+            {
                 label: 'GitHub',
                 href: 'https://github.com/Tech-Know2/Phestus-Platform',
                 position: 'right',
@@ -102,6 +108,10 @@ export const siteNavigation: SiteNavigation = {
                     {
                         label: 'Documentation',
                         href: '/docs',
+                    },
+                    {
+                        label: 'Versions',
+                        href: '/versions',
                     },
                 ],
             },
