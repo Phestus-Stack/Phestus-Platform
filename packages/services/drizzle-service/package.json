@@ -1,0 +1,55 @@
+{
+  "name": "@phestus/drizzle-service",
+  "version": "0.1.1",
+  "private": false,
+  "description": "The Phestus DrizzleORM service adapter allowing for direct interactions with a SQL database.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Phestus-Stack/Phestus-Platform.git",
+    "directory": "packages/service/drizzle-service"
+  },
+  "homepage": "https://github.com/Phestus-Stack/Phestus-Platform#readme",
+  "keywords": [
+    "phestus",
+    "service",
+    "drizzleORM",
+    "orm",
+    "postgresql",
+    "backend",
+    "framework",
+    "modular",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@phestus/sdk": "workspace:*",
+    "drizzle-orm": "^0.45.4",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.23.1",
+    "tslib": "2.8.1",
+    "tsup": "8.5.1",
+    "typescript": "5.7.3"
+  }
+}
